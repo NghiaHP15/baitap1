@@ -1,4 +1,10 @@
+import 'dart:io';
+
 void main() {
-  int a = 5;
-  print(a * a);
+  int number = int.parse(stdin.readLineSync()!);
+  int sum = 0;
+  for (int i = 1; i <= number; i++) {
+    sum += i;
+  }
+  print(sum);
 }

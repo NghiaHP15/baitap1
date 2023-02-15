@@ -1,4 +1,8 @@
+import 'dart:io';
+
 void main() {
-  int p = 2, t = 5, r = 8;
-  print('${(p * t * r) / 100}');
+  int number = int.parse(stdin.readLineSync()!);
+  for (int i = 0; i < 100; i++) {
+    print(number);
+  }
 }

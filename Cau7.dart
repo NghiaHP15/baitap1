@@ -1,6 +1,10 @@
+import 'dart:io';
+
 void main() {
-  int a = 4, b = 7;
-  int t = (a / b).toInt();
-  double d = (a / b) - t;
-  print('Thuong: ${t}, Du: ${d}');
+  int sum = 1;
+  int number = int.parse(stdin.readLineSync()!);
+  for (int i = 1; i <= number; i++) {
+    sum = sum * i;
+  }
+  print(sum);
 }
